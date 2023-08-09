@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #fffaf5;
+}
+
+.seccion1 {
+  text-align: center;
+  padding-top: 100px;
+  flex-direction: row;
+}
+
+.seccion1 h1 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.seccion1 h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.seccion1 img {
+  opacity: 0.7;
+  margin-top: 40px;
+  max-width: 120px;
+  max-height: 70px;
+  width: auto;
+  height: auto;
+}
+
+
+.input-nome {
+  padding-top: 90px;
+}
+
+/* Input container */
+.input-container {
+  position: relative;
+  margin: 20px;
+}
+
+/* Input field */
+.input-field {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background-color: transparent;
+}
+
+/* Input label */
+.input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: rgba(204, 204, 204, 0);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  
+}
+
+/* Input highlight */
+.input-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #915340;
+  transition: all 0.3s ease;
+}
+
+/* Input field:focus styles */
+.input-field:focus + .input-label {
+  top: -20px;
+  font-size: 12px;
+  color: #915340;
+}
+
+.input-field:focus + .input-label + .input-highlight {
+  width: 100%;
+}

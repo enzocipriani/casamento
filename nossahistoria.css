@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #fffaf5;
+}
+
+.seccion1 {
+  text-align: center;
+  padding-top: 100px;
+  flex-direction: row;
+}
+
+.seccion1 h1 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.seccion1 h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.seccion1 img {
+  opacity: 0.7;
+  margin-top: 40px;
+  max-width: 120px;
+  max-height: 70px;
+  width: auto;
+  height: auto;
+}
+
+.seccion1 p {
+  margin-top: 75px;
+  text-align: justify;
+  max-width: 900px;
+}
+
+.seccion2 img {
+  margin-top: 55px;
+  max-width: 900px;
+  max-height: 800px;
+  width: auto;
+  height: auto;
+}
