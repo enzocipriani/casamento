@@ -94,3 +94,13 @@ body {
 .input-field:focus + .input-label + .input-highlight {
   width: 100%;
 }
+
+
+.input-form .input-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200vh;
+  margin: 0;
+  background: #fffaf5;
+}
