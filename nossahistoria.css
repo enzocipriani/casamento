@@ -1,3 +1,8 @@
+:root {
+  --blue: #00374A;
+  --offwhite: #fffaf5;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace;
@@ -9,7 +14,7 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background: #fffaf5;
+  background: var(--offwhite);
 }
 
 .seccion1 {
@@ -58,5 +63,5 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background: #fffaf5;
+  background: var(--offwhite);
 }

@@ -1,3 +1,9 @@
+:root {
+  --blue: #00374A;
+  --offwhite: #fffaf5;
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -69,7 +75,7 @@ header {
 .countdown-container .text {
   color: #fffaf5;
   padding: 15px;
-  background-color: #bd916e;
+  background-color: var(--blue);
   font-weight: 600;
   font-size: 2rem;
   line-height: 1;
@@ -107,8 +113,8 @@ header {
 .seccion3 img {
   opacity: 0.7;
   margin-top: 40px;
-  max-width: 120px;
-  max-height: 70px;
+  max-width: 150px;
+  max-height: 100px;
   width: auto;
   height: auto;
 }
