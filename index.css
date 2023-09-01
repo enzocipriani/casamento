@@ -1,53 +1,68 @@
 :root {
   --blue: #00374A;
   --offwhite: #fffaf5;
+  --font-color: #754C29;
 }
 
+@font-face {
+  font-family: 'Trajan' ;
+  src: url(./assets/fonts/Trajan\ Pro.ttf) format('truetype'), 
+  url(./assets/fonts/TrajanPro-Bold.otf) format('opentype'),
+  url(./assets/fonts/TrajanPro-Regular.ttf) format('truetype');
+  font-weight: normal;
+}
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Trajan', Courier, monospace;
 }
 
 body {
+  color: var(--font-color);
+  background: var(--offwhite);
+}
+
+.img_logo_header {
+  width: 50px;
+}
+
+/* https://www.youtube.com/watch?v=Pjb-66eTrik&ab_channel=GustavoNeitzke */
+
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  margin: 0;
-  background: #fffaf5;
+  padding: 10px 10%;
+  justify-content: space-around;
+  background-color: var(--offwhite);
+  box-shadow: 1px 1px 4px var(--blue);
 }
 
-/*
-header {
-  background-color: tomato;
+.navigation_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3em;
 }
 
-.navbar li {
-  list-style: none;
-}
-
-.navbar a {
-  color: #fffaf5;
+.navigation_header a {
   text-decoration: none;
+  font-weight: bold;
+  color: var(--blue);
 }
 
-.navbar {
-  width: 100%;
-  min-height: 70px;
-  display: flex;
- 
-  justify-content: space-between;
-}
-*/
-
-.banner {
-  background-image: url(ARQUIVOS/banner_1.png);
+.seccion_banner {
   align-items: center;
-  height: 900px;
-  width: 1920px;
-  border-radius: 10px;
+  text-align: center;
+  flex-direction: row;
+}
+
+.seccion_banner img {  
+  height: 100%;
+  width: 100%;
 }
 
 .seccion2 {
@@ -111,7 +126,6 @@ header {
 }
 
 .seccion3 img {
-  opacity: 0.7;
   margin-top: 40px;
   max-width: 150px;
   max-height: 100px;
@@ -119,14 +133,27 @@ header {
   height: auto;
 }
 
-.seccion3 p {
+#text_seccion3 {
+  display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+#text_seccion3 .text_h5 {
+  text-align: center;
+  font-weight: 300;
   margin-top: 75px;
-  text-align: justify;
   max-width: 900px;
 }
 
-.seccion4 img {
+.seccion4 {
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+  flex-direction: row;
+}
+
+.seccion4 img {  
   margin-top: 55px;
   max-width: 900px;
   max-height: 800px;
