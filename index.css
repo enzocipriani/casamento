@@ -54,6 +54,14 @@ body {
   color: var(--blue);
 }
 
+.btn_icon_header {
+  background-color: transparent;
+  border: none;
+  color: var(--font-color);
+  cursor: pointer;
+  display: none;
+}
+
 .seccion_banner {
   align-items: center;
   text-align: center;
@@ -160,4 +168,24 @@ body {
   width: auto;
   height: auto;
   border-radius: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .btn_icon_header {
+    display: block;
+  }
+
+  .navigation_header {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    background-color: var(--blue);
+    height: 100%;
+    width: 35vw;
+    padding: 1em;
+    animation-duration: 1s;
+    margin-left: -100vw;
+  }
+
 }
