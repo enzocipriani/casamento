@@ -1,0 +1,80 @@
+:root {
+  --blue: #00374a;
+  --offwhite: #fffaf5;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--offwhite);
+}
+
+.seccion1 {
+  text-align: center;
+  padding-top: 100px;
+ 
+}
+
+.seccion1 h1 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.seccion1 h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.seccion1 img {
+  opacity: 0.7;
+  margin-top: 40px;
+  max-width: 120px;
+  max-height: 70px;
+  width: auto;
+  height: auto;
+}
+
+.seccion2 {
+    padding-top: 30px;
+}
+
+.seccion2 h2 {
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.seccion3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 30px;
+    justify-content: center;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.padrinho {
+    display: flex;
+    flex-direction: row;
+}
+
+.padrinho img {
+    margin: 20px;
+    height: 250px;
+    width: 250px;
+}
+
+.padrinho h2 {
+    padding-top: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
