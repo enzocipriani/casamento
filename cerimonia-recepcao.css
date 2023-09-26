@@ -1,0 +1,19 @@
+:root {
+  --blue: #00374a;
+  --offwhite: #fffaf5;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--offwhite);
+}
+
