@@ -1,19 +1,26 @@
 :root {
-  --blue: #00374a;
+  --blue: #00374A;
   --offwhite: #fffaf5;
+  --font-color: #754C29;
+}
+
+@font-face {
+  font-family: 'Trajan' ;
+  src: url(./assets/fonts/Trajan\ Pro.ttf) format('truetype'), 
+  url(./assets/fonts/TrajanPro-Bold.otf) format('opentype'),
+  url(./assets/fonts/TrajanPro-Regular.ttf) format('truetype');
+  font-weight: normal;
 }
 
 * {
   box-sizing: border-box;
-  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trajan', Courier, monospace;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
+  color: var(--font-color);
   background: var(--offwhite);
 }
 
@@ -29,7 +36,7 @@ body {
   padding: 10px 10%;
   justify-content: space-around;
   background-color: var(--offwhite);
-  box-shadow: 1px 1px 4px var(--blue);
+  box-shadow: 0.1px 0.1px 10px #754c2963;
 }
 
 .navigation_header {
@@ -136,18 +143,25 @@ li.dropdown {
 }
 
 .seccion2 {
-  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
   border-radius: 10px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.558);
 }
 
 .seccion2 h2{
+  padding-top: 25px;
+  padding-bottom: 15px;
   font-weight: 500;
   text-transform: uppercase;
 }
 
 .images {
+  justify-content: center;
   display: flex;
   flex-direction: row;
   background-color: rgb(255, 255, 255);

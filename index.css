@@ -28,8 +28,6 @@ body {
   width: 50px;
 }
 
-/* https://www.youtube.com/watch?v=Pjb-66eTrik&ab_channel=GustavoNeitzke */
-
 .header {
   display: flex;
   justify-content: center;
@@ -290,3 +288,12 @@ section > img {
   height: 100%;
 }
 
+/* body {
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--offwhite);
+}
