@@ -84,7 +84,6 @@ li a:hover, .dropdown:hover .dropbtn {
   background-color: var(--blue);
   border-radius: 7px;
   color: var(--offwhite);
-  
 }
 
 li.dropdown {
@@ -114,6 +113,15 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.navigation_header .check {
+  align-items: center;
+  text-decoration: underline;
+  /* border: 2.5px solid var(--blue);
+  border-radius: 10px;
+  padding: -48px;
+  */
 }
 
 .seccion_banner {

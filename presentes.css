@@ -1,14 +1,14 @@
 :root {
-  --blue: #00374A;
+  --blue: #00374a;
   --offwhite: #fffaf5;
-  --font-color: #754C29;
+  --font-color: #754c29;
 }
 
 @font-face {
-  font-family: 'Trajan' ;
-  src: url(./assets/fonts/Trajan\ Pro.ttf) format('truetype'), 
-  url(./assets/fonts/TrajanPro-Bold.otf) format('opentype'),
-  url(./assets/fonts/TrajanPro-Regular.ttf) format('truetype');
+  font-family: "Trajan";
+  src: url(./assets/fonts/Trajan\ Pro.ttf) format("truetype"),
+    url(./assets/fonts/TrajanPro-Bold.otf) format("opentype"),
+    url(./assets/fonts/TrajanPro-Regular.ttf) format("truetype");
   font-weight: normal;
 }
 
@@ -16,7 +16,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Trajan', Courier, monospace;
+  font-family: "Trajan", Courier, monospace;
 }
 
 body {
@@ -65,14 +65,14 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  
 }
 
 li {
   float: left;
 }
 
-li a, .dropbtn {
+li a,
+.dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -80,11 +80,11 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover,
+.dropdown:hover .dropbtn {
   background-color: var(--blue);
   border-radius: 7px;
   color: var(--offwhite);
-  
 }
 
 li.dropdown {
@@ -96,7 +96,7 @@ li.dropdown {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -116,89 +116,82 @@ li.dropdown {
   display: block;
 }
 
-.seccion1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.texto-presentes {
   text-align: center;
-  padding-top: 10px;
-  
+  padding-top: 20px;
 }
 
-.seccion1 h1 {
+.texto-presentes h1 {
   font-weight: 500;
   text-transform: uppercase;
 }
 
-.seccion1 h3 {
+.texto-presentes h3 {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1rem;
 }
 
-.seccion1 img {
-  margin-bottom: 30px;
-  margin-top: 30px;
+.texto-presentes img {
+  opacity: 0.7;
+  margin-top: 40px;
   max-width: 120px;
-  max-height: 120px;
-}
-
-.seccion1 p {
-  margin-top: 25px;
-  text-align: justify;
-  max-width: 900px;
-}
-
-.seccion2 img {
-  margin-top: 55px;
-  max-width: 900px;
-  max-height: 800px;
+  max-height: 70px;
   width: auto;
   height: auto;
 }
 
-.input-form .input-btn {
+.seccion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  margin: 10px;
+  padding: 20px;
+  background-color: #ffff;
+  justify-content: center;
+  align-items: center;
+}
+
+.seccion .item .preco {
+  padding-bottom: 15px;
+}
+
+.item h4 {
+  padding: 10px;
+}
+
+.seccion .item {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-  background: var(--offwhite);
 }
 
-.title-gallery {
-  text-align: center;
-  font-weight: 500;
-  font-size: 20px;
-  padding-top: 20px;
-}  
-
-.gallery {
-  align-items: center;
-  justify-content: center;
-  display: block;
-  flex-direction: column;
-  column-count: 3;
-  column-gap: 0;
-  width: 50vw;
-  margin: 0 25%;
+.seccion .item img {
+  width: 200px;
 }
 
-.gallery img {
-  padding: 7px;
-  width: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-
-  transition: scale 350ms ease, opacity 350ms linear;
+.seccion .item h4 {
 }
 
-.gallery img:hover {
-  border: 1px solid #754C29;
+.seccion .item button {
+  font-size: 17px;
+  padding: 0.5em 2em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background: var(--font-color);
+  color: white;
+  border-radius: 4px;
+  width: 200px;
 }
 
-.gallery:has(img:hover) img:not(:hover) {
-  scale: .9;
-  opacity: .7;
+.seccion .item button:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, #754c29cd 0%, #754c29ef 100%);
+}
+
+.seccion .item button:active {
+  transform: translate(0em, 0.2em);
 }
