@@ -1,19 +1,26 @@
 :root {
   --blue: #00374A;
   --offwhite: #fffaf5;
+  --font-color: #754C29;
+}
+
+@font-face {
+  font-family: 'Trajan' ;
+  src: url(./assets/fonts/Trajan\ Pro.ttf) format('truetype'), 
+  url(./assets/fonts/TrajanPro-Bold.otf) format('opentype'),
+  url(./assets/fonts/TrajanPro-Regular.ttf) format('truetype');
+  font-weight: normal;
 }
 
 * {
   box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trajan', Courier, monospace;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
+  color: var(--font-color);
   background: var(--offwhite);
 }
 
