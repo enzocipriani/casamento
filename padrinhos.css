@@ -118,7 +118,8 @@ li.dropdown {
 .seccion1 {
   text-align: center;
   padding-top: 100px;
- 
+  flex-direction: row;
+  padding-bottom: 40px;
 }
 
 .seccion1 h1 {
@@ -127,6 +128,7 @@ li.dropdown {
 }
 
 .seccion1 h3 {
+  padding-top: 20px;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1rem;
