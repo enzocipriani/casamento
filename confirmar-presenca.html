@@ -6,6 +6,7 @@
   <title>Letícia e Vítor - Confirmar presença</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.png">
   <link rel="stylesheet" href="confirmar-presenca.css">
+  <script type="module" src="index.js"></script>
 </head>
 
 <body>
@@ -55,29 +56,34 @@
   <form action="">
     <div class="input-form">
       <div class="input-container">
-        <input placeholder="Nome (Da forma que está no convite)" class="input-field" type="text">
+        <input id="name"  placeholder="Nome" class="input-field" type="text">
+        <label for="input-field" class="input-label"></label>
+        <span class="input-highlight"></span>
+      </div>
+      
+      
+      <div class="input-container">
+        <input id="lastname"  placeholder="Sobrenome" class="input-field" type="text">
         <label for="input-field" class="input-label"></label>
         <span class="input-highlight"></span>
       </div>
 
 
       <div class="input-container">
-        <input placeholder="WhatsApp" class="input-field" type="text">
+        <input id="tel" placeholder="WhatsApp" class="input-field" type="text">
         <label for="input-field" class="input-label"></label>
         <span class="input-highlight"></span>
       </div>
 
       <div class="input-container">
-        <input placeholder="Numero de confirmação" class="input-field" type="text">
+        <input id="uid" placeholder="Numero de confirmação" class="input-field" type="text">
         <label for="input-field" class="input-label"></label>
         <span class="input-highlight"></span>
       </div>
 
-      <a href="https://instagram.com">
-        <button >
-            CONFIRMAR PRESENÇA
-        </button>
-      </a>
+      <button id="button">
+          CONFIRMAR PRESENÇA
+      </button>
     </div>
   </form>
 
