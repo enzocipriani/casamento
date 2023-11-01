@@ -12,6 +12,12 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'Boheme Floral';
+  src: url(./assets/fonts/Boheme\ Floral.ttf) format('truetype');
+  font-weight: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -117,11 +123,14 @@ li.dropdown {
 
 .navigation_header .check {
   align-items: center;
-  text-decoration: underline;
-  /* border: 2.5px solid var(--blue);
-  border-radius: 10px;
-  padding: -48px;
-  */
+  background-color: #00374A;
+  color: #fffaf5;
+  border-radius: 7px;
+  margin-left: 10px;
+}
+
+.navigation_header .check:hover {
+  background-color: #754C29;
 }
 
 .seccion_banner {
@@ -185,6 +194,7 @@ li.dropdown {
 }
 
 .seccion3 h1 {
+  /* font-family: 'Boheme Floral'; */
   font-weight: 500;
   text-transform: uppercase;
 }
