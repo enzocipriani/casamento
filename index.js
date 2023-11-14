@@ -37,7 +37,8 @@ button.addEventListener('click', function() {
             alert('CONVITE JÁ CONFIRMADO!')
 
         } else {
-
+            
+            alert('VOCÊ FOI CONFIRMADO!')
             //set(ref(database, 'confirmados/' + uid), name + ' ' + lastname);
             set(ref(database, 'confirmados/' + uid), {
                 convidado: name + ' ' + lastname,

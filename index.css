@@ -194,9 +194,9 @@ li.dropdown {
 }
 
 .seccion3 h1 {
-  /* font-family: 'Boheme Floral'; */
-  font-weight: 500;
-  text-transform: uppercase;
+  font-family: 'Boheme Floral';
+  font-weight: 600;
+  font-size: 79px;
 }
 
 .seccion3 h3 {
