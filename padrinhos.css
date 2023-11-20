@@ -123,7 +123,7 @@ li.dropdown {
 
 .seccion1 {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 50px;
   flex-direction: row;
   padding-bottom: 40px;
 }
@@ -135,17 +135,15 @@ li.dropdown {
 }
 
 .seccion1 h3 {
-  padding-top: 20px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1rem;
 }
 
 .seccion1 img {
-  opacity: 0.7;
-  margin-top: 40px;
-  max-width: 120px;
-  max-height: 70px;
+  max-width: 150px;
+  max-height: 100px;
   width: auto;
   height: auto;
 }
@@ -164,7 +162,7 @@ li.dropdown {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    padding-top: 30px;
+    padding-top: 1px;
     justify-content: center;
     padding-left: 25%;
     padding-right: 25%;
