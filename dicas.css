@@ -1,20 +1,20 @@
 :root {
-  --blue: #00374A;
+  --blue: #00374a;
   --offwhite: #fffaf5;
-  --font-color: #754C29;
+  --font-color: #754c29;
 }
 
 @font-face {
-  font-family: 'Trajan' ;
-  src: url(./assets/fonts/Trajan\ Pro.ttf) format('truetype'), 
-  url(./assets/fonts/TrajanPro-Bold.otf) format('opentype'),
-  url(./assets/fonts/TrajanPro-Regular.ttf) format('truetype');
+  font-family: "Trajan";
+  src: url(./assets/fonts/Trajan\ Pro.ttf) format("truetype"),
+    url(./assets/fonts/TrajanPro-Bold.otf) format("opentype"),
+    url(./assets/fonts/TrajanPro-Regular.ttf) format("truetype");
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'Boheme Floral';
-  src: url(./assets/fonts/Boheme\ Floral.ttf) format('truetype');
+  font-family: "Boheme Floral";
+  src: url(./assets/fonts/Boheme\ Floral.ttf) format("truetype");
   font-weight: normal;
 }
 
@@ -22,7 +22,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Trajan', Courier, monospace;
+  font-family: "Trajan", Courier, monospace;
 }
 
 body {
@@ -71,14 +71,14 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  
 }
 
 li {
   float: left;
 }
 
-li a, .dropbtn {
+li a,
+.dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -86,7 +86,8 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover,
+.dropdown:hover .dropbtn {
   background-color: var(--blue);
   border-radius: 7px;
   color: var(--offwhite);
@@ -101,7 +102,7 @@ li.dropdown {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -129,7 +130,7 @@ li.dropdown {
 }
 
 .seccion1 h1 {
-  font-family: 'Boheme Floral';
+  font-family: "Boheme Floral";
   font-weight: 500;
   font-size: 90px;
 }
@@ -148,44 +149,86 @@ li.dropdown {
   height: auto;
 }
 
-.seccion2 {
-    padding-top: 30px;
-}
 
-.seccion2 h2 {
-    text-align: center;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-.seccion3 {
+.botoesFiltro {
     display: flex;
-    justify-content: center;
     flex-direction: row;
-    padding-top: 1px;
     justify-content: center;
-    padding-left: 25%;
-    padding-right: 25%;
+}
+
+.botoesFiltro h3 {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid var(--font-color);
+    background-color: var(--offwhite);
+    text-decoration: none;
+}
+
+.botoesFiltro h3:hover {
+    color: var(--offwhite);
+    background-color: var(--font-color);
+    text-decoration: none;
+}
+
+.headerDica {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.dica {
+    margin-top: 50px;
+    margin-bottom: 50px;
     background-color: rgba(255, 255, 255, 0.558);
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
-.padrinho {
-    display: flex;
-    flex-direction: row;
-}
-
-.padrinho img {
-    margin: 20px;
-    height: 250px;
+ .headerDica img {
+    margin: 10px;
     width: 250px;
+    height: 250px;
+    border-radius: 10px;
 }
 
-.padrinho h2 {
-    padding-top: 40px;
-    text-transform: uppercase;
-    font-weight: 500;
+.headerDica h2 {
+    padding-top: 50px;
+    padding-left: 20px;
 }
 
-.padrinho .texto p {
-  text-align: justify;
+.headerDica p {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.dica iframe {
+    
+    width: 100%;
+}
+
+.botaoLink {
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+.botaoLink a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.botaoLink h4 {
+    text-align: center;
+    justify-content: center;
+    width: 180px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid var(--font-color);
+    text-decoration: none;
+}
+
+.botaoLink h4:hover {
+    color: var(--offwhite);
+    background-color: var(--font-color);
+    border: 1px solid var(--font-color);
+    text-decoration: none;
 }
