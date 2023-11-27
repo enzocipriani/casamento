@@ -42,7 +42,7 @@ body {
   padding: 10px 10%;
   justify-content: space-around;
   background-color: var(--offwhite);
-  box-shadow: 1px 1px 4px var(--blue);
+  
 }
 
 .navigation_header {
@@ -55,7 +55,7 @@ body {
 .navigation_header a {
   text-decoration: none;
   font-weight: bold;
-  color: var(--blue);
+  color: var(--font-color);
 }
 
 .btn_icon_header {
@@ -87,7 +87,7 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  background-color: var(--blue);
+  background-color: var(--font-color);
   border-radius: 7px;
   color: var(--offwhite);
 }
@@ -106,7 +106,7 @@ li.dropdown {
 }
 
 .dropdown-content a {
-  color: var(--blue);
+  color: var(--font-color);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -114,7 +114,7 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-  background-color: var(--blue);
+  background-color: var(--font-color);
 }
 
 .dropdown:hover .dropdown-content {
@@ -123,14 +123,14 @@ li.dropdown {
 
 .navigation_header .check {
   align-items: center;
-  background-color: #00374A;
+  background-color: var(--font-color);
   color: #fffaf5;
   border-radius: 7px;
   margin-left: 10px;
 }
 
 .navigation_header .check:hover {
-  background-color: #754C29;
+  background-color: #422b17;
 }
 
 .seccion_banner {
@@ -169,7 +169,7 @@ li.dropdown {
 .countdown-container .text {
   color: #fffaf5;
   padding: 15px;
-  background-color: var(--blue);
+  background-color: var(--font-color);
   font-weight: 600;
   font-size: 2rem;
   line-height: 1;
@@ -207,9 +207,9 @@ li.dropdown {
 }
 
 .seccion3 img {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   max-width: 150px;
-  max-height: 100px;
+  max-height: 150px;
   width: auto;
   height: auto;
 }
@@ -304,7 +304,7 @@ li.dropdown {
   .navigation_header a {
     text-decoration: none;
     font-weight: bold;
-    color: var(--blue);
+    color: var(--font-color);
   }
   
   .btn_icon_header {
@@ -336,7 +336,7 @@ li.dropdown {
   }
   
   li a:hover, .dropdown:hover .dropbtn {
-    background-color: var(--blue);
+    background-color: var(--font-color);
     border-radius: 7px;
     color: var(--offwhite);
   }
@@ -355,7 +355,7 @@ li.dropdown {
   }
   
   .dropdown-content a {
-    color: var(--blue);
+    color: var(--font-color);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -363,7 +363,7 @@ li.dropdown {
   }
   
   .dropdown-content a:hover {
-    background-color: var(--blue);
+    background-color: var(--font-color);
   }
   
   .dropdown:hover .dropdown-content {

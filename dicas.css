@@ -4,6 +4,10 @@
   --font-color: #754c29;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "Trajan";
   src: url(./assets/fonts/Trajan\ Pro.ttf) format("truetype"),
