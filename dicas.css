@@ -153,35 +153,19 @@ li.dropdown {
   height: auto;
 }
 
-
-.botoesFiltro {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.botoesFiltro h3 {
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid var(--font-color);
-    background-color: var(--offwhite);
-    text-decoration: none;
-}
-
-.botoesFiltro h3:hover {
-    color: var(--offwhite);
-    background-color: var(--font-color);
-    text-decoration: none;
-}
-
 .headerDica {
     display: flex;
     flex-direction: row;
 }
 
+.headerDica p a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
 
 .dica {
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 50px;
     background-color: rgba(255, 255, 255, 0.558);
     margin-left: 20%;
@@ -226,6 +210,7 @@ li.dropdown {
     width: 180px;
     margin: 10px;
     padding: 10px;
+    border-radius: 12px;
     border: 1px solid var(--font-color);
     text-decoration: none;
 }
