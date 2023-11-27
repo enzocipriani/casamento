@@ -143,6 +143,13 @@ li.dropdown {
   height: auto;
 }
 
+.seccion1 .box h3{
+  margin: 30px;
+  padding: 10px;
+  border: 1px solid var(--font-color);
+  border-radius: 15px;
+}
+
 .seccion2 {
   display: flex;
   flex-direction: column;

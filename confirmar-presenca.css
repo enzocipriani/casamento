@@ -117,9 +117,9 @@ li.dropdown {
 }
 
 .seccion1 {
+  
   text-align: center;
   padding-top: 100px;
-  flex-direction: row;
 }
 
 .seccion1 h1 {
@@ -132,6 +132,10 @@ li.dropdown {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1rem;
+}
+
+.seccion1 .numbers h3 {
+  text-align: justify;
 }
 
 .seccion1 img {
