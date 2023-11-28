@@ -189,12 +189,13 @@ li.dropdown {
 .padrinho {
     display: flex;
     flex-direction: row;
+
 }
 
 .padrinho img {
     margin: 20px;
-    height: 250px;
-    width: 250px;
+    height: 280px;
+    width: 280px;
 }
 
 .padrinho h2 {
@@ -204,8 +205,17 @@ li.dropdown {
 }
 
 .padrinho .texto p {
-  padding-top: 20px;
+  padding-top: 15px;
   text-align: justify;
+}
+
+.padrinho h6 {
+  text-align: center;
+  margin-top: 15px;
+  width: 120px;
+  color: var(--offwhite);
+  border-radius: 2px;
+  background-color: #422b17;
 }
 
 .footer {
