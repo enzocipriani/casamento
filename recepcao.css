@@ -182,7 +182,7 @@ li.dropdown {
 .countdown-container .text {
   color: #fffaf5;
   padding: 15px;
-  background-color: var(--blue);
+  background-color: var(--font-color);
   font-weight: 600;
   font-size: 2rem;
   line-height: 1;
