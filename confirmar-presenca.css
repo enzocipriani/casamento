@@ -296,3 +296,12 @@ li.dropdown {
   text-decoration: none;
   color: #c89e77;
 }
+
+.popup{
+  background-color: #00374a;
+  display: none;
+  position: absolute;
+  width: 30vw;
+  height: 20vh;
+
+}

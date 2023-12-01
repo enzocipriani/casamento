@@ -19,6 +19,19 @@ onValue(ref(database, 'confirmados/'), (snapshot) => {
     console.log(confirmedData);
 });
 
+function closeConfirmado(){
+    const confirmado = document.getElementById('confirmado')
+    confirmado.style.display = "none";
+    
+}
+
+const botoes = document.getElementById('botoes');
+
+botoes.addEventListener('click', function(){
+    const confirmado = document.getElementById('confirmado')
+    confirmado.style.display = "none";
+});
+
 button.addEventListener('click', function() {
     
     const name = document.getElementById('name').value;
@@ -49,7 +62,8 @@ button.addEventListener('click', function() {
         }
 
     } else {
-
+        
+        //document.getElementById('confirmado').style.display = "block";
         alert('CONVITE INVÁLIDO!')
 
     }
