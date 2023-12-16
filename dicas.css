@@ -296,4 +296,135 @@ li.dropdown {
     display: block;
   }
 
+  .seccion1 {
+    text-align: center;
+    padding-top: 50px;
+    flex-direction: row;
+    padding-bottom: 20px;
+  }
+  
+  .seccion1 h1 {
+    font-family: "Boheme Floral";
+    font-weight: 500;
+    font-size: 90px;
+    margin-bottom: 30px;
+  }
+  
+  .seccion1 h3 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 15px;
+  }
+  
+  .seccion1 img {
+    max-width: 150px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+  }
+  
+  .headerDica {
+      display: flex;
+      flex-direction: column-reverse;
+  }
+  
+  .headerDica p a {
+    text-decoration: none;
+    color: var(--font-color);
+  }
+  
+  
+  .dica {
+    
+    justify-content: center;
+    align-items: center;
+      margin-top: 5px;
+      margin-bottom: 50px;
+      background-color: rgba(255, 255, 255, 0.558);
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+  
+   .headerDica img {    
+      width: 90%;
+      height: 250px;
+      border-radius: 10px;
+  }
+  
+  .headerDica h2 {
+      padding-top: 30px;
+      padding-left: 20px;
+  }
+  
+  .headerDica p {
+      padding-top: 20px;
+      padding-left: 20px;
+  }
+  
+  .dica iframe {
+    margin-left: 10px;
+    width: 90%;
+    height: 250px;
+  }
+  
+  .botaoLink {
+      text-decoration: none;
+      margin-top: 20px;
+  }
+  
+  .botaoLink a {
+      text-decoration: none;
+      color: var(--font-color);
+  }
+  
+  .botaoLink h4 {
+      text-align: center;
+      justify-content: center;
+      width: 180px;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 12px;
+      border: 1px solid var(--font-color);
+      text-decoration: none;
+  }
+  
+  .botaoLink h4:hover {
+      color: var(--offwhite);
+      background-color: var(--font-color);
+      border: 1px solid var(--font-color);
+      text-decoration: none;
+  }
+  
+  .footer {
+    margin-top: 80px;
+    box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 4px 35px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.75);
+    width: 100%;
+    height: 215px;
+    background-color: #754C29;
+    text-align: center;
+  }
+  
+  .footer .img_footer {
+    padding-bottom: 15px;
+    padding-top: 26px;
+    width: 150px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer p {
+    color: #b58a63;
+    font-size: 8px;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #c89e77;
+  }
+
 }
