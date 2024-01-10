@@ -6,15 +6,15 @@
 
 @font-face {
   font-family: 'Trajan' ;
-  src: url(./assets/fonts/Trajan\ Pro.ttf) format('truetype'), 
-  url(./assets/fonts/TrajanPro-Bold.otf) format('opentype'),
-  url(./assets/fonts/TrajanPro-Regular.ttf) format('truetype');
+  src: url(../assets/fonts/Trajan\ Pro.ttf) format('truetype'), 
+  url(../assets/fonts/TrajanPro-Bold.otf) format('opentype'),
+  url(../assets/fonts/TrajanPro-Regular.ttf) format('truetype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Boheme Floral';
-  src: url(./assets/fonts/Boheme\ Floral.ttf) format('truetype');
+  src: url(../assets/fonts/Boheme\ Floral.ttf) format('truetype');
   font-weight: normal;
 }
 
@@ -134,12 +134,16 @@ li.dropdown {
 }
 
 .seccion1 h1 {
-  font-family: 'Boheme Floral';
+  font-family: 'Trajan';
   font-weight: 500;
-  font-size: 90px;
+  font-size: 35px;
+  margin-top: 25px;
 }
 
 .seccion1 h3 {
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 20px;
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 400;
@@ -153,58 +157,47 @@ li.dropdown {
   height: auto;
 }
 
-.seccion2 {
-    padding-top: 30px;
+
+.qrcodeContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.seccion2 h2 {
-    text-align: center;
-    font-weight: 500;
-    text-transform: uppercase;
+.qrcodebg {
+  align-items: center;
+  background-color: var(--font-color);
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-.seccion3 {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    padding-top: 1px;
-    justify-content: center;
-    padding-left: 25%;
-    padding-right: 25%;
-    background-color: rgba(255, 255, 255, 0.558);
+.qrcodebg img {
+  width: 250px;
+  height: 250px;
 }
 
-.padrinho {
-    display: flex;
-    flex-direction: row;
-
-}
-
-.padrinho img {
-    margin: 20px;
-    height: 280px;
-    width: 280px;
-}
-
-.padrinho h2 {
-    padding-top: 30px;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-
-.padrinho .texto p {
-  padding-top: 15px;
-  text-align: justify;
-}
-
-.padrinho h6 {
+.qrcodeContainer button {
   text-align: center;
-  margin-top: 15px;
-  width: 120px;
-  color: var(--offwhite);
-  border-radius: 2px;
-  background-color: #422b17;
+  justify-content: center;
+  display: flex;
+  font-family: 'Trajan';
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 16px;
+  margin-top: 20px;
+  background-color: var(--font-color);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
+
+.qrcodeContainer button:hover {
+  opacity: 0.8;
+}
+
 
 .footer {
   margin-top: 70px;
@@ -301,18 +294,20 @@ li.dropdown {
   }
   
   .seccion1 h1 {
-    font-family: 'Boheme Floral';
+    font-family: 'Trajan';
     font-weight: 500;
-    font-size: 90px;
+    font-size: 25px;
+    margin-top: 20px;
   }
   
   .seccion1 h3 {
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 1rem;
-    padding: 20px;
-    margin-top: 20px;
+    font-size: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
   }
   
   .seccion1 img {
@@ -322,63 +317,7 @@ li.dropdown {
     height: auto;
   }
   
-  .seccion2 {
-      padding-top: 30px;
-  }
-  
-  .seccion2 h2 {
-      text-align: center;
-      font-weight: 500;
-      text-transform: uppercase;
-  }
-  
-  .seccion3 {
-      display: flex;
-      padding-top: 1px;
-      padding-bottom: 60px;
-      justify-content: center;
-      background-color: rgba(255, 255, 255, 0.558);
-  }
-  
-  .padrinho {
-      display: flex;
-      flex-direction: column;
-  
-  }
-  
-  .padrinho img {
-      border: 1px solid var(--font-color);
-      margin: 10px;
-      height: 280px;
-      width: 280px;
-      padding: 3px;
-  }
-  
-  .padrinho h2 {
-      text-align: center;
-      padding-top: 20px;
-      text-transform: uppercase;
-      font-weight: 800;
-  }
-  
-  .padrinho .texto p {
-    padding-top: 15px;
-    text-align: justify;
-  }
-  
-  
-  
-  .padrinho h6 {
-    text-align: center;
-    margin-top: 10px;
-    width: 120px;
-    color: var(--offwhite);
-    border-radius: 2px;
-    background-color: #422b17;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
+
   
   .footer {
     margin-top: 90px;
