@@ -12,24 +12,9 @@ var confirmedData;
 
 onValue(ref(database, 'invites/'), (snapshot) => {
     invitesData = snapshot.val();
-    console.log(invitesData);
 });
 onValue(ref(database, 'confirmados/'), (snapshot) => {
     confirmedData = snapshot.val();
-    console.log(confirmedData);
-});
-
-function closeConfirmado(){
-    const confirmado = document.getElementById('confirmado')
-    confirmado.style.display = "none";
-    
-}
-
-const botoes = document.getElementById('botoes');
-
-botoes.addEventListener('click', function(){
-    const confirmado = document.getElementById('confirmado')
-    confirmado.style.display = "none";
 });
 
 button.addEventListener('click', function() {
