@@ -341,7 +341,7 @@ li.dropdown {
   .seccion2 .title {
     text-align: center;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 17px;
     padding-top: 20px;
   }
   
@@ -358,10 +358,10 @@ li.dropdown {
   
   .countdown-container .text {
     color: #fffaf5;
-    padding: 15px;
+    padding: 20px;
     background-color: var(--font-color);
     font-weight: 600;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1;
     margin: 1rem 2rem;
   }
@@ -379,22 +379,24 @@ li.dropdown {
   .seccion3 {
     align-items: center;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 40px;
     flex-direction: row;
   }
   
   .seccion3 h1 {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-weight: 800;
-    font-size: 25px;
+    font-size: 23px;
   }
   
   .seccion3 h3 {
-    padding: 15px;
+    padding-right: 19px;
+    padding-left: 19px;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 1rem;
-    margin-top: 10px;
+    font-size: 15px;
+    margin-top: 7px;
   }
   
   .seccion3 img {
