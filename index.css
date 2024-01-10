@@ -18,6 +18,24 @@
   font-weight: normal;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -128,17 +146,15 @@ li.dropdown {
 }
 
 .seccion_banner {
-  height: 733px;
-  background-image: url("ARQUIVOS/banner_3.png");
+  height: 893px;
+  background-image: url("ARQUIVOS/banner_1.png");
   background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
-/* .seccion_banner img {  
-  height: 100%;
-  width: 100%;
-} */
-
 .seccion2 {
+  animation: 1s ease-in 0s 1 fadeIn;
   align-items: center;
 }
 
