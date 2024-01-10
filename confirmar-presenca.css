@@ -12,6 +12,50 @@
   font-weight: normal;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadetobottom {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.05);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -126,11 +170,13 @@ li.dropdown {
 }
 
 .seccion1 h1 {
+  animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
   font-weight: 500;
   text-transform: uppercase;
 }
 
 .seccion1 h3 {
+  animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
   padding-top: 20px;
   text-transform: uppercase;
   font-weight: 400;
@@ -138,6 +184,8 @@ li.dropdown {
 }
 
 .box {
+  animation: 2s ease-in 0s 1 fadeIn;
+  animation: pulse 2s ease 0s 250 normal none;
   text-align: center;
   margin-left: 25%;
   margin-right: 25%;
@@ -155,6 +203,7 @@ li.dropdown {
 }
 
 .brasao img {
+  animation: 1.5s ease-in 0s 1 fadeIn;
   margin-bottom: 30px;
   margin-top: 10px;
   max-width: 120px;
@@ -168,7 +217,7 @@ li.dropdown {
 
 /* Input container */
 .input-container {
-  
+  animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
   width: 450px;
   position: relative;
   margin: 20px;

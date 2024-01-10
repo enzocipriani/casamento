@@ -18,6 +18,36 @@
   font-weight: normal;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadetobottom {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -134,12 +164,15 @@ li.dropdown {
 }
 
 .seccion1 h1 {
+  animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
   font-family: 'Boheme Floral';
   font-weight: 500;
   font-size: 90px;
 }
 
 .seccion1 h3 {
+  animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
+  margin: 20px;
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 400;
@@ -147,6 +180,7 @@ li.dropdown {
 }
 
 .seccion1 img {
+  animation: 1.5s ease-in 0s 1 fadeIn;
   max-width: 150px;
   max-height: 100px;
   width: auto;
@@ -175,6 +209,7 @@ li.dropdown {
 }
 
 .padrinho {
+    animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
     display: flex;
     flex-direction: row;
 

@@ -18,6 +18,50 @@
   font-weight: normal;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadetobottom {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(0.9);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -134,6 +178,7 @@ li.dropdown {
 }
 
 .seccion1 h1 {
+  animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
   font-family: 'Boheme Floral';
   font-weight: 500;
   font-size: 90px;
@@ -149,6 +194,7 @@ li.dropdown {
 }
 
 .seccion1 img {
+  animation: 1.5s ease-in 0s 1 fadeIn;
   max-width: 150px;
   max-height: 100px;
   width: auto;
@@ -156,6 +202,7 @@ li.dropdown {
 }
 
 .title {
+  animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
   text-align: center;
   font-weight: 500;
   font-size: 20px;
@@ -163,6 +210,7 @@ li.dropdown {
 }
 
 .countdown-container {
+  animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -194,6 +242,7 @@ li.dropdown {
 }
 
 .seccion2 {
+  animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -242,6 +291,7 @@ li.dropdown {
 }
 
 .seccion2 .box {
+  animation: pulse 2s ease 0s 250 normal none;
   margin: 30px;
   padding: 10px;
   border: 1px solid var(--font-color);
@@ -331,7 +381,7 @@ li.dropdown {
   .seccion1 h1 {
     font-family: 'Boheme Floral';
     font-weight: 500;
-    font-size: 60px;
+    font-size: 80px;
     margin-bottom: 20px;
     padding: 20px;
     /* font-weight: 500;
@@ -409,6 +459,8 @@ li.dropdown {
   }
   
   .seccion2 h3 {
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 25px;
     margin-bottom: 20px;
   }

@@ -18,6 +18,50 @@
   font-weight: normal;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadetobottom {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(0.9);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -134,6 +178,7 @@ li.dropdown {
 }
 
 .seccion1 h1 {
+  animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
   font-family: 'Boheme Floral';
   font-weight: 500;
   font-size: 90px;
@@ -144,16 +189,21 @@ li.dropdown {
   font-weight: 400;
   font-size: 1rem;
   padding: 20px;
+  
 }
 
 .box {
+  animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
+  animation: pulse 2s ease 0s 10 normal none;
   border-radius: 20px;
   border: 1px solid var(--font-color);
   margin-left: 25%;
   margin-right: 25%;
+  margin-top: 20px;
 }
 
 .seccion1 img {
+  animation: 1.5s ease-in 0s 1 fadeIn;
   max-width: 150px;
   max-height: 100px;
   width: auto;
@@ -171,7 +221,8 @@ li.dropdown {
 }
 
 .seccion2 h2{
-  padding-top: 8px;
+  font-size: 20px;
+  margin: 20px;
   padding-bottom: 5px;
   font-weight: 500;
   text-transform: uppercase;
@@ -285,7 +336,7 @@ li.dropdown {
     text-align: center;
     padding-top: 50px;
     flex-direction: row;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
   }
   
   .seccion1 h1 {
@@ -327,7 +378,7 @@ li.dropdown {
   }
   
   .seccion2 h2{
-    padding-top: 8px;
+    padding-top: 4px;
     padding-bottom: 5px;
     font-weight: 500;
     text-transform: uppercase;

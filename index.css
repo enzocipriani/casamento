@@ -36,6 +36,18 @@
   }
 }
 
+@keyframes fadetobottom {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -154,7 +166,7 @@ li.dropdown {
 }
 
 .seccion2 {
-  animation: 1s ease-in 0s 1 fadeIn;
+  animation: 1.5s ease-in 0s 1 fadeIn;
   align-items: center;
 }
 
@@ -217,6 +229,7 @@ li.dropdown {
 }
 
 .seccion3 img {
+  animation: fadetobottom 2.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
   margin-bottom: 30px;
   max-width: 150px;
   max-height: 150px;

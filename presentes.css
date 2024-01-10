@@ -12,6 +12,50 @@
   font-weight: normal;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadetobottom {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(0.9);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -121,6 +165,7 @@ li.dropdown {
 }
 
 .texto-presentes h1 {
+  animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
   font-family: 'Boheme Floral';
   font-weight: 500;
   font-size: 90px;
@@ -129,6 +174,7 @@ li.dropdown {
 }
 
 .texto-presentes h3 {
+  animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
   padding-bottom: 20px;
   font-size: 1rem;
   padding-top: 20px;
@@ -144,6 +190,7 @@ li.dropdown {
 
 
 .texto-presentes img {
+  animation: 1.5s ease-in 0s 1 fadeIn;
   margin-bottom: 30px;
   margin-top: 10px;
   max-width: 120px;
@@ -158,6 +205,7 @@ li.dropdown {
 }
 
 .item {
+  animation: fadetobottom 1.7s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
   width: 250px;
   height: 450px;
   max-width: 250px;
