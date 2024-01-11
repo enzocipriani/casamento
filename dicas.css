@@ -22,6 +22,50 @@ html {
   font-weight: normal;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadetobottom {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(0.9);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -138,12 +182,14 @@ li.dropdown {
 }
 
 .seccion1 h1 {
+  animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
   font-family: "Boheme Floral";
   font-weight: 500;
   font-size: 90px;
 }
 
 .seccion1 h3 {
+  animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 400;
@@ -151,10 +197,44 @@ li.dropdown {
 }
 
 .seccion1 img {
+  animation: 1.5s ease-in 0s 1 fadeIn;
   max-width: 150px;
   max-height: 100px;
   width: auto;
   height: auto;
+}
+
+.seccion2 {
+  animation: 1.5s ease-in 0s 1 fadeIn;
+  text-align: center;
+  padding-top: 50px;
+  flex-direction: row;
+  padding-bottom: 10px;
+}
+
+.botoes {
+  animation: 1.5s ease-in 0s 1 fadeIn;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.botoes a {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: var(--font-color);
+  text-decoration: none;
+  color: var(--offwhite);
+  margin: 20px;
+}
+
+.botoes a:hover {
+  opacity: 0.7;
+}
+
+.botoes h5 {
+  font-family: "Trajan", Courier, monospace;
 }
 
 .headerDica {
@@ -165,6 +245,35 @@ li.dropdown {
 .headerDica p a {
   text-decoration: none;
   color: var(--font-color);
+}
+
+.belezaContainer {
+  border-color: var(--font-color);
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.belezaContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.belezaContainer p a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.belezaContainer h2 {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.belezaContainer p {
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 
@@ -200,7 +309,7 @@ li.dropdown {
 
 .botaoLink {
     text-decoration: none;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .botaoLink a {
@@ -307,11 +416,12 @@ li.dropdown {
   }
   
   .seccion1 h3 {
-    margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 1rem;
-    padding: 15px;
+    font-size: 12px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
   }
   
   .seccion1 img {
@@ -320,6 +430,43 @@ li.dropdown {
     width: auto;
     height: auto;
   }
+
+  .seccion2 {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    padding-top: 50px;
+    flex-direction: row;
+    padding-bottom: 10px;
+  }
+
+  .botoes {
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .botoes a {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: var(--font-color);
+    text-decoration: none;
+    color: var(--offwhite);
+    margin: 10px;
+  }
+  
+  .botoes a:hover {
+    opacity: 0.7;
+  }
+  
+  .botoes h5 {
+    font-family: "Trajan", Courier, monospace;
+  }
+  
   
   .headerDica {
       display: flex;
@@ -333,30 +480,28 @@ li.dropdown {
   
   
   .dica {
-    
     justify-content: center;
     align-items: center;
-      margin-top: 5px;
-      margin-bottom: 50px;
-      background-color: rgba(255, 255, 255, 0.558);
-      margin-left: 5%;
-      margin-right: 5%;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.558);
+    margin-left: 5%;
+    margin-right: 5%;
   }
   
    .headerDica img {    
-      width: 90%;
-      height: 250px;
-      border-radius: 10px;
+    width: 90%;
+    height: 250px;
+    border-radius: 10px;
   }
   
   .headerDica h2 {
-      padding-top: 30px;
-      padding-left: 20px;
+    padding-top: 30px;
+    padding-left: 20px;
   }
   
   .headerDica p {
-      padding-top: 20px;
-      padding-left: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
   }
   
   .dica iframe {
