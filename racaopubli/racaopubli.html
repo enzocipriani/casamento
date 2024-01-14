@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Letícia e Vítor - QR Code</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
+        <link rel="stylesheet" href="racaopubli.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+              <div class="logo">
+                <a href="../index.html">
+                  <img class="img_logo_header" src="../assets/logo_p.png" alt="Brasao_Logo">
+                </a>
+              </div>
+      
+              <div class="nav-list">
+                <ul class="nav-item">
+                  <li ><a href="../index.html">Inicio</a></li>
+                  <li class="dropdown">
+                    <a href="" class="dropbtn">Páginas</a>
+                    <div class="dropdown-content">
+                      <a href="../nossahistoria.html">Nossa História</a>
+                      <a href="../padrinhos.html">Padrinhos</a>
+                      <a href="../damas.html">Damas</a>
+                      <a href="../dicas.html">Dicas</a>
+                      <a href="../cerimonia.html">Civil e Religioso</a>
+                      <a href="../recepcao.html">Cerimônia e Recepção</a>
+                    </div>
+                    <li><a href="../presentes.html">Presentes</a></li>
+                    <li><a class="check" href="../confirmar-presenca.html">Confirmar presença</a></li>
+                  </li>
+                </ul>
+              </div>
+      
+              <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                  <img class="icon" src="../assets/close/menu.svg" alt="">
+                </button>
+              </div>
+      
+      
+      
+            </nav>
+            
+            <div class="mobile-menu">
+              <ul >
+                <li class="nav-item"><a class="check" href="../confirmar-presenca.html">Confirmar presença</a></li>
+                <li class="nav-item"><a href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a href="../nossahistoria.html">Nossa História</a></li>
+                <li class="nav-item"><a href="../padrinhos.html">Padrinhos</a></li>
+                <li class="nav-item"><a href="../damas.html">Damas</a></li>
+                <li class="nav-item"><a href="../dicas.html">Dicas</a></li>
+                <li class="nav-item"><a href="../cerimonia.html">Civil e Religioso</a></li>
+                <li class="nav-item"><a href="../recepcao.html">Cerimônia e Recepção</a></li>
+                <li class="nav-item"><a href="../presentes.html">Presentes</a></li>
+               
+              </ul>
+            </div>
+      
+      
+          </header>
+
+        <div class="seccion1">
+            <img src="../assets/logo_p.png" alt="">
+            <h1>Ração Hepática Publi</h1>
+            <h3><b>Você optou por nos presentear com um valor simbolico no preço de uma ração hepática da Publi, agradecemos imensamente a sua intenção!</b>
+            </h3>
+        </div>
+
+        <div class="qrcodeContainer">
+            <div class="qrcodebg">
+                <img src="racaopubli.png" alt="qrcode">
+            </div>
+            <button id="myButton" onclick="copyToClipboard()">
+                Copiar Pix
+            </button>
+        </div>
+
+       
+
+
+        <footer class="footer">
+            <img class="img_footer" src="../assets/logo_b.png" alt="logo_branca">
+            <p>Desenvolvido por <a href="https://www.instagram.com/e.cipriani"><b>Enzo Cipriani</a></p>
+          </footer>
+        
+        
+
+        
+
+
+    </body>
+</html>
