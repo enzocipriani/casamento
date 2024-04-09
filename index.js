@@ -18,7 +18,7 @@ onValue(ref(database, 'confirmados/'), (snapshot) => {
 });
 
 document.getElementById('name').addEventListener('input', function() {
-    // Remove espaços em branco do valor do campo de entrada
+    
     this.value = this.value.replace(/\s/g, '');
 });
 
