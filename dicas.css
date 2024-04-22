@@ -293,6 +293,11 @@ li.dropdown {
     margin-right: 20%;
 }
 
+.direction-btn {
+  display: flex;
+  flex-direction: row;
+}
+
  .headerDica img {
     margin: 10px;
     width: 250px;
@@ -437,6 +442,11 @@ li.dropdown {
     max-height: 100px;
     width: auto;
     height: auto;
+  }
+
+  .direction-btn {
+    display: flex;
+    flex-direction: column;
   }
 
   .seccion2 {
