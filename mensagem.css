@@ -159,7 +159,7 @@ li.dropdown {
 .recadoContainer {
     margin-top: 200px;
     background-color: var(--offwhite);
-    width: 400px;
+    width: 370px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -188,6 +188,46 @@ li.dropdown {
 #videoPreview {
     display: block;
     margin: 20px auto;
+}
+
+#loader {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#loader p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    margin: 6px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @media screen and (max-width: 768px) {

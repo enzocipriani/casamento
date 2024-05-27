@@ -79,14 +79,14 @@
                 minus, tempore similique fugiat, maxime id ad itaque dicta
                 incidunt dolorem aliquam libero dolores voluptas ab eos quidem
                 ex repellendus quaerat.</p>
-            <input type="file" id="videoInput" accept="video/*" capture="user"
-                style="display: none;" width="1280" height="720">
-
+                <div id="loader" style="display:none;">
+                    <p>Enviando vídeo...</p>
+                    <div class="lds-ring"><div></div><div></div></div>
+                </div>
+            <input type="file" id="videoInput" accept="video/*" capture="user" style="display: none;">
             <button id="recordButton">Gravar Vídeo</button>
-            <video id="videoPreview" width="320" height="240" controls
-                style="display:none;" autoplay></video>
-            <button id="uploadButton" style="display:none;">Upload
-                Vídeo</button>
+            <video id="videoPreview" width="240" height="320" controls style="display:none;" autoplay></video>
+            <button id="uploadButton" style="display:none;">Enviar Mensagem</button>
         </section>
 
         <script type="module" src="firebaseConfig.js"></script>
