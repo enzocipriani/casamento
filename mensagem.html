@@ -9,10 +9,8 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.png">
         <link rel="stylesheet" href="mensagem.css">
         <script src="countdown.js" defer></script>
-        <script src="video.js" defer></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet">
-
     </head>
     <body>
 
@@ -38,11 +36,11 @@
                                 <a href="cerimonia.html">Civil e Religioso</a>
                                 <a href="recepcao.html">Cerimônia e Recepção</a>
                             </div>
-                            <li><a href="presentes.html">Presentes</a></li>
-                            <li><a class="check"
-                                    href="confirmar-presenca.html">Confirmar
-                                    presença</a></li>
                         </li>
+                        <li><a href="presentes.html">Presentes</a></li>
+                        <li><a class="check"
+                                href="confirmar-presenca.html">Confirmar
+                                presença</a></li>
                     </ul>
                 </div>
 
@@ -51,7 +49,6 @@
                         <img class="icon" src="assets/close/menu.svg" alt>
                     </button>
                 </div>
-
             </nav>
 
             <div class="mobile-menu">
@@ -72,10 +69,8 @@
                             Recepção</a></li>
                     <li class="nav-item"><a
                             href="presentes.html">Presentes</a></li>
-
                 </ul>
             </div>
-
         </header>
 
         <section class="recadoContainer">
@@ -84,14 +79,18 @@
                 minus, tempore similique fugiat, maxime id ad itaque dicta
                 incidunt dolorem aliquam libero dolores voluptas ab eos quidem
                 ex repellendus quaerat.</p>
+            <input type="file" id="videoInput" accept="video/*" capture="user"
+                style="display: none;" width="1280" height="720">
 
-            <button id="recordButton">Enviar Vídeo</button>
-            <video id="videoPreview" width="320" height="240" autoplay></video>
-            <button id="uploadButton" style="display:none;">
-                Upload Vídeo
-            </button>
+            <button id="recordButton">Gravar Vídeo</button>
+            <video id="videoPreview" width="320" height="240" controls
+                style="display:none;" autoplay></video>
+            <button id="uploadButton" style="display:none;">Upload
+                Vídeo</button>
         </section>
 
-    </body>
+        <script type="module" src="firebaseConfig.js"></script>
+        <script type="module" src="video.js"></script>
 
+    </body>
 </html>
