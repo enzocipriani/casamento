@@ -157,77 +157,92 @@ li.dropdown {
 }
 
 .recadoContainer {
-    margin-top: 200px;
-    background-color: var(--offwhite);
-    width: 370px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  padding: 40px;
+  margin-top: 70px;
+  margin-bottom: 200px;
+  background-color: var(--font-color);
+  width: 370px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
 }
 
 .recadoContainer h1 {
-    text-align: center;
-    color: var(--font-color);
+  padding-top: 40px;
+  text-align: center;
+  color: var(--offwhite);
 }
 
 .recadoContainer p {
-    margin-top: 20px;
+  text-align: center;
+  color: var(--offwhite);
+  margin-top: 20px;
 }
 
-#recordButton, #uploadButton {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: var(--font-color);
-    color: var(--offwhite);
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+#recordButton i {
+  padding-right: 10px;
 }
+
+#recordButton,
+#uploadButton {
+  font-weight: 800;
+  align-items: center;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: var(--offwhite);
+  color: var(--font-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 
 #videoPreview {
-    display: block;
-    margin: 20px auto;
+  display: block;
+  margin: 10px auto;
 }
 
 #loader {
-    display: none;
-    text-align: center;
-    margin-top: 20px;
+  display: none;
+  text-align: center;
+  margin-top: 20px;
 }
 
 #loader p {
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .lds-ring {
-    display: inline-block;
-    position: relative;
-    width: 64px;
-    height: 64px;
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
 }
 
 .lds-ring div {
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    width: 51px;
-    height: 51px;
-    margin: 6px;
-    border: 6px solid #fff;
-    border-radius: 50%;
-    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: #fff transparent transparent transparent;
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
 }
 
 @keyframes lds-ring {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 768px) {
